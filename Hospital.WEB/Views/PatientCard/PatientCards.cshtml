@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Hospital.WEB.Models.PatientCardViewModel>
+
+
+@{
+    ViewBag.Title = "PatientCards";
+}
+
+<h2></h2>
+
+
+<table class="table">
+    <tr>
+
+        <th>
+            Text Info
+        </th>
+        <th>
+            Date of record
+        </th>
+
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.TextInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfRecord)
+            </td>
+
+
+        </tr>
+    }
+
+<button>
+    @Html.ActionLink("Back to all Patients", "../Patient/Patients")
+</button>
+
+</table>

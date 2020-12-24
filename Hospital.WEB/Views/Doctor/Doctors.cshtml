@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Hospital.WEB.Models.DoctorViewModel>
+
+
+@{
+    ViewBag.Title = "Doctors";
+}
+
+<h2>All Doctors</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        SecondName: @Html.TextBox("secondName") <br />
+        <button><input type="submit" value="Filter" /></button>
+    </p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Specialization)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.FirstName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SecondName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Specialization)
+    </td>
+    <td>
+        <button>
+        @Html.ActionLink("Edit", "EditDoctor", new { id = item.Id })
+            </button>
+    </td>
+    <td>
+        <button>
+        @Html.ActionLink("Delete", "DeleteDoctor", new { id = item.Id })
+            </button>
+    </td>
+   
+
+</tr>
+    }
+    <button>
+    @Html.ActionLink("Create a new doctor", "CreateDoctor", new { })
+        </button>
+</table>

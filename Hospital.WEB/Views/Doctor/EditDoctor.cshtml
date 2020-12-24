@@ -1,0 +1,33 @@
+﻿@model Hospital.WEB.Models.DoctorViewModel
+
+
+@{
+    ViewBag.Title = "EditDoctor";
+}
+
+
+
+@using (Html.BeginForm("EditDoctor", "Doctor", FormMethod.Post))
+{
+    <fieldset>
+        @Html.HiddenFor(model => model.Id)
+
+        <p>
+            @Html.LabelFor(m => m.FirstName, "First Name")
+            <br />
+            @Html.EditorFor(m => m.FirstName)
+            <br />
+            @Html.LabelFor(m => m.SecondName, "Second Name")
+            <br />
+            @Html.EditorFor(m => m.SecondName)
+            <br />
+            @Html.LabelFor(m => m.Specialization, "Specialization")
+            <br />
+            @Html.EditorFor(m => m.Specialization)
+        </p>
+        <button><input type="submit" value="Edit" /></button>
+    </fieldset>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

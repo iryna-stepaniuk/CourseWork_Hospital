@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hospital.BLL.DTO.DoctorDTO" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>DTO\DoctorDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital.BLL.DTO.DoctorScheduleDTO" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAQAAAAAAIAAiAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\DoctorScheduleDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital.BLL.DTO.PatientCardDTO" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAIAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\PatientCardDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital.BLL.DTO.PatientDTO" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\PatientDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital.BLL.DTO.TimetableDTO" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAIAAiAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\TimetableDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital.BLL.Infrastructure.ServiceModule" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\ServiceModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital.BLL.Infrastructure.ValidationException" Collapsed="true">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Infrastructure\ValidationException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital.BLL.Services.DoctorScheduleService">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAAAAAAAAAAAAAAAAACAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Services\DoctorScheduleService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital.BLL.Services.DoctorService">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAGQAAAAAAABEABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\DoctorService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital.BLL.Services.HospitalService">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\HospitalService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital.BLL.Services.PatientCardService">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAAAAACAAAAAAAAAAAAAAAAAAQAAABAAA=</HashCode>
+      <FileName>Services\PatientCardService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital.BLL.Services.PatientService">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAAAAAAAAAAAAEABCEAAAAAAAIAAAAACA=</HashCode>
+      <FileName>Services\PatientService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital.BLL.Services.TimetableService">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAAAAAAEAACAAAAAAAAAAAAACAAABAAAA=</HashCode>
+      <FileName>Services\Timetable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Hospital.BLL.Interfaces.IDoctorScheduleService" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAACAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDoctorScheduleService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hospital.BLL.Interfaces.IDoctorService" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAGQAAAAAAABEABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDoctorService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hospital.BLL.Interfaces.IHospitalService" Collapsed="true">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IHospitalService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hospital.BLL.Interfaces.IPatientCardService" Collapsed="true">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAACAAAAAAAAAAAAAAAAAAQAAABAAA=</HashCode>
+      <FileName>Interfaces\IPatientCardService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hospital.BLL.Interfaces.IPatientService" Collapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAEABCEAAAAAAAIAAAAACA=</HashCode>
+      <FileName>Interfaces\IPatientService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hospital.BLL.Interfaces.ITimetableService" Collapsed="true">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAEAACAAAAAAAAAAAAACAAABAAAA=</HashCode>
+      <FileName>Interfaces\ITimetableService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

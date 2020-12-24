@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Hospital.WEB.Models.PatientViewModel>
+
+
+@{
+    ViewBag.Title = "Patients";
+}
+
+<h2>All Patients</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        SecondName: @Html.TextBox("secondName") <br />
+        <input type="submit" value="Filter" />
+    </p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondName)
+        </th>
+
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.FirstName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SecondName)
+    </td>
+
+    <td>
+        <button>@Html.ActionLink("Edit", "EditPatient", new { id = item.Id })</button>
+        
+    </td>
+    <td>
+        <button> @Html.ActionLink("Delete", "DeletePatient", new { id = item.Id })</button>
+       
+    </td>
+    <td>
+        <button>
+            @Html.ActionLink("ECard", "../PatientCard/PatientCards", new { id = item.Id })
+        </button>
+        
+    </td>
+    <td>
+        <button>@Html.ActionLink("Create a new record", "../PatientCard/CreatePatientCard", new { id = item.Id })</button>
+    
+        </td>
+</tr>
+    }
+
+    @Html.ActionLink("Create a new patient", "CreatePatient", new { })
+
+</table>
